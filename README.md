@@ -176,7 +176,7 @@ following technique:
 1. Install the apache webserver: `$ sudo apt install apache2`
 2. Enable the cgid module: `$ sudo a2enmod cgid`
 3. Open the ~ubunutu directory for the world: `chmod 755 ~`
-4. Put the following bash script inside the `/usr/lib/cgi-bin/` directory with 755 permission:
+4. Put the following bash script in the `/usr/lib/cgi-bin/test` with 755 permission:
 ```
 #!/bin/bash
 
