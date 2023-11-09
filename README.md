@@ -32,8 +32,8 @@ tutorial.  For now, execute the following command to make the python command cal
 python3.
 
 ```
-$ sudo apt install python-is-python3
-# we might as well install pip, since pip is not installed by default
+# Python 3.x is installed by default on ubuntu 22.04
+# But we need to install pip, since pip is not installed by default
 $ sudo apt install python3-pip
 ```
 
