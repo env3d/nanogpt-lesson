@@ -81,7 +81,7 @@ To run the prepare.py script for the sharespeare's dataset, issue
 the following command:
 
 ```
-$ python data/shakespeare_char/prepare.py
+$ python3 data/shakespeare_char/prepare.py
 ```
 
 VERY IMPORTANT NOTE:  you'll noticed that the preapre.py script is stored under the
@@ -122,7 +122,7 @@ Since we have 0 GPUs, only 1 CPU, and a few minutes, our training will not be op
 the following command to train our model:
 
 ```
-$ python train.py config/train_shakespeare_char.py --device=cpu --compile=False --eval_iters=20 --log_interval=1 --block_size=64 --batch_size=12 --n_layer=4 --n_head=4 --n_embd=128 --max_iters=2000 --lr_decay_iters=2000 --dropout=0.0
+$ python3 train.py config/train_shakespeare_char.py --device=cpu --compile=False --eval_iters=20 --log_interval=1 --block_size=64 --batch_size=12 --n_layer=4 --n_head=4 --n_embd=128 --max_iters=2000 --lr_decay_iters=2000 --dropout=0.0
 ```
 
 Here we need to issue multiple command line argument to override the default training parameters.  The most
@@ -141,7 +141,7 @@ After the training is complete, the model will be written to the sub-directory `
 Now that we have a trained model, we can ask it to generate new data.  Run the following command:
 
 ```
-$ python sample.py --out_dir=out-shakespeare-char --device=cpu --start='wherefore art thou'
+$ python3 sample.py --out_dir=out-shakespeare-char --device=cpu --start='wherefore art thou'
 ```
 
 The sample.py script will use the generated model to produce output.  Below is an example run:
